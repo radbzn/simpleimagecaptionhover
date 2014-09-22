@@ -1,0 +1,89 @@
+/*
+- Created by: Ricardo De León
+- www.imdevsigner.com
+- Version: 2.4  
+*/
+
+html, body,div,dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+form,fieldset,legend,input,button,textarea,p,blockquote,th,td,
+span, object, iframe, pre, abbr, address, article, section, header,
+hgroup, menu, nav, time, mark, audio, video, details, canvas, summary { 
+	background: transparent;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+	display: block;
+}	
+	
+table { 
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+	
+fieldset,img,button { 
+	border: 0 none;
+	}
+	
+address,caption,cite,code,dfn,em,th,var,optgroup { 
+	font-style:inherit;
+	font-weight:inherit;
+	}
+
+del,ins { 
+	text-decoration:none;
+	}
+
+ol { 
+	list-style:decimal;
+	}
+	ol li { 
+		list-style:decimal outside;
+		}
+ul { 
+	list-style:none;
+	}
+	
+blockquote, q {
+    quotes:none;
+}
+
+caption,th { 
+	text-align:left;
+	}
+
+h1,h2,h3,h4,h5,h6 { 
+	font-size:100%;
+	font-weight:normal;
+	}
+
+:focus { outline:0;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+abbr,acronym{ border:0 none;font-variant:normal;}
+sup{ vertical-align:text-top;}
+sub{ vertical-align:text-bottom;}
+legend{ color:#000;}
+
+input,button,textarea,select,optgroup,option { 
+	font-family:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-weight:inherit;
+	vertical-align:middle;
+	}
+	
+input,textarea,select { 
+	background: #fff;
+	border:1px solid #CCC;
+	}

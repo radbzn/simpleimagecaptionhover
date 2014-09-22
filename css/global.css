@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* ----------------------------
+- Copyright 2014, www.imdevsigner.com All rights reserved.
+- Authors: Ricardo De León
+*/
+
+/* General Classes
+ ============================================================ */
+
+p { margin-bottom:10px; }
+
+a, a:visited { text-decoration: none; }
+	a:hover{ }
+
+
+/* Body
+============================================================ */
+body {
+ 	background: #E1E9EF;
+	color: #33465E;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+body * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+/* Wrapper
+ ============================================================ */
+ .wrapper {
+ 	margin: 0 auto;
+ 	width: 850px;
+ }
+
+/* Header
+============================================================ */
+header {
+	overflow: hidden;
+	margin: 100px 0;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.demo-links {
+	overflow: hidden;
+}
+	.demo-links a {
+		color: #33465E;
+		font-size: 14px;
+		text-transform: uppercase;
+		margin-right: 10px;
+		padding: 3px 10px;
+	}
+		.demo-links a:hover,
+		.demo-links a.active {
+			background: #33465E;
+			color: #ffffff;
+		}
+
+		.demo-links a.coming {
+			color: #ccc;
+		}
+			.demo-links a.coming:hover {
+				background: none;
+				color: #cccccc;
+			}
+
+/* Content
+============================================================ */
+
+ul.thumbnails {
+	overflow: hidden;
+	width: 850px;
+	margin: 0 auto;
+}
+	ul.thumbnails li {
+		height: 250px;
+		position: relative;
+		margin-right: 50px;
+		float: left;
+		width: 400px;
+	}
+		ul.thumbnails li:nth-child(2n) { margin-right: 0; }
+		ul.thumbnails li:hover div.overlay {
+			opacity: 1;
+			transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			-webkit-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+		}
+		ul.thumbnails li:hover a.text {
+			opacity: 1;
+			bottom: 0px;
+			transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			-webkit-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+
+		}
+		ul.thumbnails li div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		ul.thumbnails li .image img {
+			display: block;
+			width: 100%;
+		}
+			ul.thumbnails li .image {
+				z-index: 1;
+			}
+			ul.thumbnails li .text {
+				z-index: 3;
+				opacity: 0;
+				color: #ffffff;
+				position: absolute;
+				text-align: center;
+				text-transform: uppercase;
+				bottom: -20px;
+				width: 100%;
+				padding: 15px;
+				transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-webkit-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+			}
+			ul.thumbnails li .overlay {
+				z-index: 2;
+				opacity: 0;
+				background: rgba(0,0,0,0.6);
+				transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-webkit-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+			}
+
+ 
+/* Footer
+============================================================ */
+footer {
+	overflow: hidden;
+	margin: 100px 0;
+}
+	footer span {
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+		footer span a {
+			font-weight: 600;
+			color: #33465E;
+			display: inline-block;
+			padding: 0 5px;
+			transition: all 0.2s linear;
+			-moz-transition: all 0.2s linear;
+			-webkit-transition: all 0.2s linear;
+			-o-transition: all 0.2s linear;
+		}
+			footer span a:hover {
+				background: #33465E;
+				color: #ffffff;
+				transition: all 0.2s linear;
+				-moz-transition: all 0.2s linear;
+				-webkit-transition: all 0.2s linear;
+				-o-transition: all 0.2s linear;
+			}
+
+
